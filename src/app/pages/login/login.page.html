@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Akira</ion-title>
+    <ion-button fill="clear" [routerLink] ="['/home']"  >Inicio</ion-button>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Correo electronico:" type="email" placeholder="Ingrese su correo" [(ngModel)]="correo" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Contraseña" type="password" value="contraseña..."></ion-input>
+    </ion-item>
+
+  </ion-list>
+</ion-list>
+<ion-button color="secondary"[routerLink] ="['/home']">Ingresar</ion-button>
+
+
+<ion-footer>
+  <p class="MarcaRegistrada">Akira®</p>
+  <ion-toolbar>
+    
+    <ion-button size="small" color="warning"[routerLink] ="['/Instagram']" >Instagram</ion-button> 
+    <ion-button size="small" color="success"[routerLink] ="['/Whatsapp']">Whatsapp</ion-button> 
+  </ion-toolbar>
+</ion-footer>
+
